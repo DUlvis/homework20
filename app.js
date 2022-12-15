@@ -20,7 +20,7 @@ if (cityName === "" || cityName === null) {
       let icon = document.querySelector(".icon");
 
       city.innerHTML = data.name;
-      temp.innerHTML = data.main.temp + "°C";
+      temp.innerHTML = Math.round(data.main.temp) + "°C";
       pressure.innerHTML = data.main.pressure + " hPa";
       description.innerHTML = "Description: " + data.weather[0].description;
       humidity.innerHTML = data.main.humidity + "φ";
