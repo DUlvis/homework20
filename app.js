@@ -26,7 +26,9 @@ if (cityName === "" || cityName === null) {
       humidity.innerHTML = data.main.humidity + "φ";
       speed.innerHTML = data.wind.speed + " m/sec";
       deg.innerHTML = data.wind.deg + "°";
-      icon.src =
-        "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
+      icon.setAttribute(
+        "src",
+        "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png"
+      );
     });
 }
