@@ -6,7 +6,7 @@ if (cityName === "" || cityName === null) {
   alert("Некорректный ввод");
 } else {
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&APPID=5d066958a60d315387d9492393935c19`
+    `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&APPID=5d066958a60d315387d9492393935c19`
   )
     .then((res) => res.json())
     .then((data) => {
